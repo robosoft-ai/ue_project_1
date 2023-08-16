@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{62499551-161A-4D6E-8A14-F9738C35C883}",
+	"EngineAssociation": "{9C5FDE16-0F31-471A-9698-A1F448895F0C}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -17,6 +17,14 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "RapyutaSimulationPlugins",
+			"Enabled": true
+		},
+		{
+			"Name": "rclUE",
+			"Enabled": true
 		}
 	]
 }

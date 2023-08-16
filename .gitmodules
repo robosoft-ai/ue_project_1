@@ -8,5 +8,4 @@
 [submodule "Plugins/RapyutaSimulationPlugins"]
 	path = Plugins/RapyutaSimulationPlugins
 	url = https://github.com/robosoft-ai/UE-Plugins.git 
-	branch = feature/warthog_4wheels
 # https://github.com/rapyuta-robotics/RapyutaSimulationPlugins.git

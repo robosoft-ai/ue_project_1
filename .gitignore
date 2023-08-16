@@ -1,6 +1,7 @@
 .vs/
 .vscode/
 .kdev4/
+.idea/
 
 *.slo
 *.lo
@@ -10,6 +11,7 @@
 *.gch
 *.pch
 
+*.so
 *.dylib
 *.dll
 
@@ -17,6 +19,7 @@
 
 *.lai
 *.la
+*.a
 *.lib
 
 *.exe
@@ -37,20 +40,40 @@
 *.workspace
 *.code-workspace
 *.kdev4
-
+*.pro.user
+.ignore
+Makefile
 CMakeLists.txt
-SimulaTOR/SimulaTORCode*.txt
+SimulaTORCode*.txt
+*CodeCompletionFolders.txt
+*CodeLitePreProcessor.txt
 
 Binaries/*
+Plugins/*/Binaries/*
+Saved/*
+Build/*
 Intermediate/*
+Plugins/*/Intermediate/*
+DerivedDataCache/*
+Content/Developers/*
+
+# Whitelist PakBlacklist-<BuildConfiguration>.txt files
+!Build/*/
+Build/*/**
+!Build/*/PakBlacklist*.txt
+
+# Don't ignore icon files in Build
+!Build/**/*.ico
+
+# Generated from DefaultEngineBase.init
+Config/DefaultEngine.ini
+
+# Whitelist Linux plugin libs
+!Plugins/*/ThirdParty/**/*.a
 
 *_BuiltData.uasset
 
-# External test intermediate data
-ExternalTest/RRSIM_TESTS
-ExternalTest/rr_sim_tests/rr_sim_tests/__pycache__
-ExternalTest/rr_sim_tests/rr_sim_tests/utils/__pycache__
-
-# Docs
-_readthedocs
-docs/source/README.md
+# External test python cache, pyc
+ExternalTest/TB3_TESTS
+ExternalTest/turtlebot3_tests/turtlebot3_tests/__pycache__
+ExternalTest/turtlebot3_tests/maps
